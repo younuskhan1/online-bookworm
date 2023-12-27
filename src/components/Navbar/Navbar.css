@@ -1,14 +1,17 @@
 .navbar-parents{
     background-color: rgb(238, 223, 223);
-    padding: 20px 20px;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 .logo-and-club-name-div{
     display: flex;
     align-items: center;
 }
 .reader-logo{
-    height: 35px;
-    width: 45px;
+    height: 82px;
+    width: 100px;
 }
 .club-name{
     font-size: 20px;
@@ -21,26 +24,50 @@
     color: rgb(40, 9, 101);
 }
 .reader-image{
-    height: 50px;
-    width: 55px;
+    height: 82px;
+    width: 100px;
     border-radius: 10px;
 }
 .reader-introduction{
     display: flex;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 .reader-name{
     color: rgb(101, 21, 213);
     font-size: 22px;
     font-weight: bold;
-    padding-bottom: 5px;
+    padding-bottom: 12px;
 }
 .reader-location{
     color: rgb(101, 21, 213);
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 .fa-location-dot{
     margin-right: 5px;
+}
+.weight-kg{
+    font-size: 28px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 5px;
+    font-weight: 700;
+}
+.measurement{
+    font-size: 17px;
+    padding-top: 5px;
+    color: rgb(161, 153, 153);
+}
+.unit-measure{
+    color: rgb(161, 153, 153);
+}
+.reader-condition{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.single-info-div{
+    background-color: #fff;
+    padding: 12px;
+    border-radius: 10px;
 }
