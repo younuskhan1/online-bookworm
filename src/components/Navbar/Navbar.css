@@ -1,6 +1,6 @@
 .navbar-parents{
-    background-color: aqua;
-    padding: 10px 30px;
+    background-color: rgb(249, 248, 248);
+    padding: 10px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,6 +8,7 @@
 .logo-and-club-name-div{
     display: flex;
     align-items: center;
+    gap: 20px;
 }
 .reader-logo{
     height: 82px;
@@ -18,10 +19,13 @@
     font-weight: 700;
     font-family: Arial, Helvetica, sans-serif;
     color: purple;
-    margin-left: 10px;
 }
-.club-name:hover{
-    color: rgb(40, 9, 101);
+.club-location{
+    font-size: 15px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple; 
+    padding-top: 10px;
 }
 .reader-image{
     height: 82px;
@@ -32,6 +36,7 @@
     display: flex;
     gap: 20px;
     align-items: center;
+    justify-content: space-between;
 }
 .reader-name{
     color: rgb(101, 21, 213);
@@ -47,7 +52,7 @@
 .fa-location-dot{
     margin-right: 5px;
 }
-.weight-kg{
+.kg-fts-yrs{
     font-size: 28px;
     font-family: Arial, Helvetica, sans-serif;
     margin-right: 5px;
@@ -64,11 +69,42 @@
 }
 .reader-condition{
     display: flex;
-    align-items: center;
     gap: 15px;
 }
 .single-info-div{
     background-color:white;
-    padding: 12px;
+    padding: 12px 15px;
     border-radius: 10px;
 }
+
+
+@media screen and (max-width: 769px){
+    .navbar-parents{
+        flex-direction: column;
+        padding: 30px 3px;
+    }
+    .reader-introduction{
+        padding: 15px 0px;
+        
+    }
+    .reader-condition{
+        gap: 27px;
+    }
+    .reader-name{
+        font-size: 20px;  
+    }
+    .reader-location{
+        font-size: 16px;
+    }
+    .club-name{
+        font-size: 17px;
+    }
+    .club-location{
+        font-size: 13px;
+    }
+}
+/* @media screen and (max-width: 426px){
+    .reader-condition{
+       gap: 28px;
+    }
+} */
