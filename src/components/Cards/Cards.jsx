@@ -6,10 +6,13 @@ import "./Cards.css"
 
 const Cards = ({books}) => {
     return (
-        <div className="all-cards-section">
-          {
-            books.map((book, index)=> <Card key = {index} book = {book}></Card>)
-          }
+        <div>
+            <h3 className='cards-parent-heading'>Selected Today<span>&#39;</span>s Books</h3>
+            <div  className="all-cards-section">
+              {
+                books.map((book, index)=> <Card key = {index} book = {book}></Card>)
+              }
+            </div>
         </div>
     );
 };

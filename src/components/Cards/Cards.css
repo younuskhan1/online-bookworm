@@ -4,3 +4,8 @@
     width: 75%;
     gap: 10px;
 }
+.cards-parent-heading{
+    text-align: center;
+    padding: 0px 10px 20px;
+    font-size: 25px;
+}
