@@ -1,65 +1,65 @@
 [
     {
-      "image": "https://example.com/image1.jpg",
-      "title": "Adventure in the Mountains",
+      "image": "https://i.ibb.co/2NgSqT8/bloody-title.jpg",
+      "title": "Bloody Title",
       "paragraph": "Embark on a thrilling mountain expedition and explore breathtaking landscapes.",
-      "age": 25,
+      "age": "20-25",
       "time_required": "2 hours"
     },
     {
-      "image": "https://example.com/image2.jpg",
-      "title": "Gourmet Cooking Class",
+      "image": "https://i.ibb.co/XWP9rKP/comic-magazine.jpg",
+      "title": "Cosmic Magazine",
       "paragraph": "Learn the art of gourmet cooking from renowned chefs and impress your friends with culinary skills.",
-      "age": 30,
+      "age": "20-25",
       "time_required": "3 hours"
     },
     {
-      "image": "https://example.com/image3.jpg",
-      "title": "Artistic Photography Workshop",
+      "image": "https://i.ibb.co/P179YT7/cosmic-horror-book.jpg",
+      "title": "Cosmic Horror Book",
       "paragraph": "Capture the world through your lens and express your creativity in this photography workshop.",
-      "age": 28,
+      "age":  "20-25",
       "time_required": "4 hours"
     },
     {
-      "image": "https://example.com/image4.jpg",
-      "title": "Yoga Retreat",
+      "image": "https://i.ibb.co/pvPn9jG/giant-size-comic.jpg",
+      "title": "Giant Size Comic",
       "paragraph": "Relax your mind and body with a rejuvenating yoga retreat amidst serene natural surroundings.",
-      "age": 35,
-      "time_required": "1 day"
+      "age":  "20-25",
+      "time_required": "4 hours"
     },
     {
-      "image": "https://example.com/image5.jpg",
-      "title": "Virtual Reality Gaming Tournament",
+      "image": "https://i.ibb.co/4t4MPgP/halloween-party.jpg",
+      "title": "Halloween Party",
       "paragraph": "Immerse yourself in the world of virtual reality and compete in thrilling gaming tournaments.",
-      "age": 18,
+      "age":  "20-25",
       "time_required": "6 hours"
     },
     {
-      "image": "https://example.com/image6.jpg",
-      "title": "Historical Walking Tour",
+      "image": "https://i.ibb.co/GRq2C0t/omg-crash-boom.jpg",
+      "title": "Omg Crash Boom",
       "paragraph": "Step back in time as you explore the rich history of the city on this guided walking tour.",
-      "age": 40,
+      "age": "20-25",
       "time_required": "3.5 hours"
     },
     {
-      "image": "https://example.com/image7.jpg",
-      "title": "Fitness Bootcamp",
+      "image": "https://i.ibb.co/KxBz7cV/revenge-title.jpg",
+      "title": "Revenge Title",
       "paragraph": "Challenge yourself with a high-intensity fitness bootcamp designed to push your limits.",
-      "age": 28,
+      "age":  "20-25",
       "time_required": "2.5 hours"
     },
     {
-      "image": "https://example.com/image8.jpg",
-      "title": "DIY Home Decor Workshop",
+      "image": "https://i.ibb.co/DQZ33Qx/special-horror-party.jpg",
+      "title": "Special Horror Party",
       "paragraph": "Get creative and design your own home decor items with expert guidance in this hands-on workshop.",
-      "age": 32,
+      "age": "20-25",
       "time_required": "4 hours"
     },
     {
-      "image": "https://example.com/image9.jpg",
-      "title": "Nature Painting Retreat",
+      "image": "https://i.ibb.co/b243LvF/super-special-edition.jpg",
+      "title": "Super Special Edition",
       "paragraph": "Reconnect with nature and express your artistic side through landscape painting in this retreat.",
-      "age": 26,
+      "age":  "20-25",
       "time_required": "1.5 days"
     }
   ]

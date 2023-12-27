@@ -1,0 +1,7 @@
+.card-and-reading-info{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+    background-color: rgb(249, 248, 248);
+}
