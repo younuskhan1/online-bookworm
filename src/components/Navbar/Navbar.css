@@ -88,7 +88,7 @@
         
     }
     .reader-condition{
-        gap: 27px;
+        gap: 22px;
     }
     .reader-name{
         font-size: 20px;  
@@ -103,8 +103,3 @@
         font-size: 13px;
     }
 }
-/* @media screen and (max-width: 426px){
-    .reader-condition{
-       gap: 28px;
-    }
-} */
