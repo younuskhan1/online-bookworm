@@ -1,9 +1,9 @@
 .navbar-parents{
-    background-color: rgb(249, 248, 248);
     padding: 10px 25px;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: rgb(249, 248, 248);
 }
 .logo-and-club-name-div{
     display: flex;
@@ -72,7 +72,7 @@
     gap: 15px;
 }
 .single-info-div{
-    background-color:white;
+    background-color: #ffff;
     padding: 12px 15px;
     border-radius: 10px;
 }

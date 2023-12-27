@@ -1,4 +1,6 @@
 .all-cards-section{
-    width: 80%;
-    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 75%;
+    gap: 10px;
 }

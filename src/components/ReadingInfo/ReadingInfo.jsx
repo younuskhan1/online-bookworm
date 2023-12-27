@@ -1,4 +1,4 @@
-
+import "./ReadingInfo.css"
 
 const ReadingInfo = () => {
     return (

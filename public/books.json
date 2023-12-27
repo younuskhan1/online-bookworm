@@ -9,7 +9,7 @@
     {
       "image": "https://i.ibb.co/XWP9rKP/comic-magazine.jpg",
       "title": "Cosmic Magazine",
-      "paragraph": "Learn the art of gourmet cooking from renowned chefs and impress your friends with culinary skills.",
+      "paragraph": "Learn the art of gourmet cooking from renowned chefs and impress your friends.",
       "age": "20-25",
       "time_required": "3 hours"
     },
@@ -51,7 +51,7 @@
     {
       "image": "https://i.ibb.co/DQZ33Qx/special-horror-party.jpg",
       "title": "Special Horror Party",
-      "paragraph": "Get creative and design your own home decor items with expert guidance in this hands-on workshop.",
+      "paragraph": "Get creative and design your own home decor items with expert guidance in this hands-on.",
       "age": "20-25",
       "time_required": "4 hours"
     },
