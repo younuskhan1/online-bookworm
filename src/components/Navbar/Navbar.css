@@ -1,5 +1,5 @@
 .navbar-parents{
-    background-color: rgb(238, 223, 223);
+    background-color: aqua;
     padding: 10px 30px;
     display: flex;
     align-items: center;
@@ -57,6 +57,7 @@
     font-size: 17px;
     padding-top: 5px;
     color: rgb(161, 153, 153);
+    text-align: center;
 }
 .unit-measure{
     color: rgb(161, 153, 153);
@@ -67,7 +68,7 @@
     gap: 15px;
 }
 .single-info-div{
-    background-color: #fff;
+    background-color:white;
     padding: 12px;
     border-radius: 10px;
 }
