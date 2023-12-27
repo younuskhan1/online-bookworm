@@ -1,0 +1,46 @@
+.navbar-parents{
+    background-color: rgb(238, 223, 223);
+    padding: 20px 20px;
+}
+.logo-and-club-name-div{
+    display: flex;
+    align-items: center;
+}
+.reader-logo{
+    height: 35px;
+    width: 45px;
+}
+.club-name{
+    font-size: 20px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    color: purple;
+    margin-left: 10px;
+}
+.club-name:hover{
+    color: rgb(40, 9, 101);
+}
+.reader-image{
+    height: 50px;
+    width: 55px;
+    border-radius: 10px;
+}
+.reader-introduction{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.reader-name{
+    color: rgb(101, 21, 213);
+    font-size: 22px;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.reader-location{
+    color: rgb(101, 21, 213);
+    font-size: 15px;
+    font-weight: bold;
+}
+.fa-location-dot{
+    margin-right: 5px;
+}
