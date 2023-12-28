@@ -64,3 +64,30 @@
   background-color: #298e46;
   box-shadow: rgba(20, 70, 32, .2) 0 1px 0 inset;
 }
+
+@media screen and (max-width: 1026px){
+  .book-card{
+    width: auto;
+    height: 480px;
+
+  }
+  
+}
+
+@media screen and (max-width: 769px){
+  .book-card{
+    width: auto;
+    height: 480px;
+
+  }
+  
+}
+
+@media screen and (max-width: 426px){
+  .book-card{
+    width: auto;
+    height: 480px;
+
+  }
+  
+}

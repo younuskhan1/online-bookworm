@@ -12,3 +12,27 @@
     padding: 0px 10px 20px; 
     font-size: 25px;
 }
+@media screen and (max-width: 1026px){
+    .cards-parent{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 769px){
+    .all-cards-div{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .cards-parent{
+        width: 100%;
+    }
+    
+}
+@media screen and (max-width: 426px){
+    .all-cards-div{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cards-parent{
+        width: 100%;
+    }
+    
+}
