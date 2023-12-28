@@ -19,7 +19,10 @@ const Card = ({book, exerciseTimeHandler}) => {
                     <p style={{padding:"10px 0px", fontWeight: "bold"}}> For Age : {age}</p>
                     <p style={{fontWeight: "bold"}}> Time Required : {time_required}</p>
                 </div>
-                <div className="button-holder"><button className="cart-button" style={{backgroundColor: added ? `red` : `#2ea44f`, cursor: added ? `not-allowed` : `pointer`}} onClick={()=>exerciseTimeHandler(parseFloat(time_required, setAdded(true)))}>{added ? `added` : `Add to Cart`}</button></div>
+                <div className="button-holder"><button className="cart-button" 
+                style={{backgroundColor: added ? `red` : `#2ea44f`, cursor: added ? `not-allowed` : `pointer`}} 
+                onClick={()=> exerciseTimeHandler(book, setAdded(true))}>
+                {added ? `added` : `Add to Cart`}</button></div>
             </div>
         </div>
     );

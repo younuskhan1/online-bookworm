@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import "./ReadingInfo.css"
 import { useState } from 'react';
 
-const ReadingInfo = ({totalExerciseTime}) => {
+const ReadingInfo = ({totalExerciseTime, numberOfBooks}) => {
     // console.log(totalExerciseTime)
     const [breakTime, setBreakTime] = useState(0);
 
@@ -23,6 +23,7 @@ const ReadingInfo = ({totalExerciseTime}) => {
                     <button className="break-time-button button-margin" onClick={()=>breakTimeHandler(50)}><span style={{fontSize: "22px",fontWeight:"700"}}>50</span>m</button>  
                 </div>
                 <h3 style={{fontSize: "20px", color: "purple", padding: "20px 0px",textAlign:"center",borderBottom:"4px solid white"}}>Exercise Details</h3>
+                <p style={{textAlign: "center", fontWeight: "700",paddingTop: "20px"}}>Total Number of Selected Books {numberOfBooks.length}</p>
                 <div className="exercise-time">
                     <p style={{fontWeight: "700"}}>Exercise Time</p>
                     <p style={{color: "gray"}}><span>{totalExerciseTime}</span> hours</p>
@@ -39,5 +40,6 @@ const ReadingInfo = ({totalExerciseTime}) => {
 
 ReadingInfo.propTypes = {
     totalExerciseTime : PropTypes.number.isRequired,
+    numberOfBooks: PropTypes.array.isRequired,
 }
 export default ReadingInfo;

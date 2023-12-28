@@ -8,7 +8,9 @@ import { useEffect } from "react";
 const CardAndReadingInfo = () => {
     const [books, setBooks] = useState([]);
     const [totalExerciseTime, setTotalExerciseTime] = useState(0);
+    const [numberOfBooks, setNumberOfBooks] = useState([]);
     // const [added, setAdded] = useState(false);
+    // console.log(numberOfBooks);
 
     useEffect(()=>{
         const loadData = async()=>{
@@ -26,16 +28,24 @@ const CardAndReadingInfo = () => {
     },[])
 
 
-    const exerciseTimeHandler = (requiredTime)=>{
-       const timeRequired = totalExerciseTime + requiredTime; 
+    const exerciseTimeHandler = (book) =>{
+        // console.log(book);
+        for(let books of numberOfBooks){
+            if( books.title === book.title){
+                return alert("you cannot add the same item for twice");
+            }
+        }
+        const timeRequired = totalExerciseTime + parseFloat(book.time_required); 
         setTotalExerciseTime(timeRequired);
+        const dataNumber = [...numberOfBooks, book];
+        setNumberOfBooks(dataNumber);
     }
     
 
     return (
         <div className="card-and-reading-info">
             <Cards exerciseTimeHandler = {exerciseTimeHandler} books = {books}></Cards>
-            <ReadingInfo totalExerciseTime={totalExerciseTime}></ReadingInfo>
+            <ReadingInfo numberOfBooks={numberOfBooks} totalExerciseTime={totalExerciseTime}></ReadingInfo>
         </div>
     );
 };
