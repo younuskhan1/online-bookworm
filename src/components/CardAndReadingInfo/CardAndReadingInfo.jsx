@@ -8,6 +8,7 @@ import { useEffect } from "react";
 const CardAndReadingInfo = () => {
     const [books, setBooks] = useState([]);
     const [totalExerciseTime, setTotalExerciseTime] = useState(0);
+    // const [added, setAdded] = useState(false);
 
     useEffect(()=>{
         const loadData = async()=>{
@@ -24,11 +25,10 @@ const CardAndReadingInfo = () => {
      loadData();
     },[])
 
-    let totalTimeRequired = 0;
-    const exerciseTimeHandler = (time_required)=>{
-        const timeRequired = parseFloat(time_required);
-        totalTimeRequired = totalTimeRequired + timeRequired; 
-        setTotalExerciseTime(totalTimeRequired);
+
+    const exerciseTimeHandler = (requiredTime)=>{
+       const timeRequired = totalExerciseTime + requiredTime; 
+        setTotalExerciseTime(timeRequired);
     }
     
 

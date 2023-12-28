@@ -1,8 +1,14 @@
 import PropTypes from 'prop-types';
 import "./Card.css"
+import { useState } from 'react';
 
 const Card = ({book, exerciseTimeHandler}) => {
     const {image, title, paragraph, age, time_required} = book;
+    const [added, setAdded] = useState(false);
+    // console.log(exerciseTimeHandler);
+
+
+
     return (
         <div className='book-card'>
             <img className='card-image' src={image} alt="" />
@@ -13,7 +19,7 @@ const Card = ({book, exerciseTimeHandler}) => {
                     <p style={{padding:"10px 0px", fontWeight: "bold"}}> For Age : {age}</p>
                     <p style={{fontWeight: "bold"}}> Time Required : {time_required}</p>
                 </div>
-                <div className="button-holder"><button className="cart-button" onClick={()=>exerciseTimeHandler(time_required)}>Add to Cart</button></div>
+                <div className="button-holder"><button className="cart-button" style={{backgroundColor: added ? `red` : `#2ea44f`, cursor: added ? `not-allowed` : `pointer`}} onClick={()=>exerciseTimeHandler(parseFloat(time_required, setAdded(true)))}>{added ? `added` : `Add to Cart`}</button></div>
             </div>
         </div>
     );
