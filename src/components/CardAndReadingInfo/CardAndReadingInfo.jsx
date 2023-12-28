@@ -7,6 +7,7 @@ import { useEffect } from "react";
 
 const CardAndReadingInfo = () => {
     const [books, setBooks] = useState([]);
+    const [totalExerciseTime, setTotalExerciseTime] = useState(0);
 
     useEffect(()=>{
         const loadData = async()=>{
@@ -22,10 +23,19 @@ const CardAndReadingInfo = () => {
         }
      loadData();
     },[])
+
+    let totalTimeRequired = 0;
+    const exerciseTimeHandler = (time_required)=>{
+        const timeRequired = parseFloat(time_required);
+        totalTimeRequired = totalTimeRequired + timeRequired; 
+        setTotalExerciseTime(totalTimeRequired);
+    }
+    
+
     return (
         <div className="card-and-reading-info">
-            <Cards books = {books}></Cards>
-            <ReadingInfo></ReadingInfo>
+            <Cards exerciseTimeHandler = {exerciseTimeHandler} books = {books}></Cards>
+            <ReadingInfo totalExerciseTime={totalExerciseTime}></ReadingInfo>
         </div>
     );
 };

@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import "./Card.css"
 
-const Card = ({book}) => {
+const Card = ({book, exerciseTimeHandler}) => {
     const {image, title, paragraph, age, time_required} = book;
     return (
         <div className='book-card'>
@@ -13,7 +13,7 @@ const Card = ({book}) => {
                     <p style={{padding:"10px 0px", fontWeight: "bold"}}> For Age : {age}</p>
                     <p style={{fontWeight: "bold"}}> Time Required : {time_required}</p>
                 </div>
-                <div className="button-holder"><button className="cart-button">Add to Cart</button></div>
+                <div className="button-holder"><button className="cart-button" onClick={()=>exerciseTimeHandler(time_required)}>Add to Cart</button></div>
             </div>
         </div>
     );
@@ -21,5 +21,6 @@ const Card = ({book}) => {
 
 Card.propTypes = {
     book : PropTypes.object.isRequired,
+    exerciseTimeHandler:PropTypes.func.isRequired,
 }
 export default Card;
