@@ -1,11 +1,14 @@
-.all-cards-section{
+.cards-parent{
+    width: 70%;
+}
+.all-cards-div{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 75%;
+    width: 100%;
     gap: 10px;
 }
 .cards-parent-heading{
     text-align: center;
-    padding: 0px 10px 20px;
+    padding: 0px 10px 20px; 
     font-size: 25px;
 }
