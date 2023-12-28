@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Cards from "../Cards/Cards";
 import ReadingInfo from "../ReadingInfo/ReadingInfo";
 import "./CardAndReadingInfo.css";
@@ -32,7 +34,9 @@ const CardAndReadingInfo = () => {
         // console.log(book);
         for(let books of numberOfBooks){
             if( books.title === book.title){
-                return alert("you cannot add the same item for twice");
+                return toast.warn("you cannot add the same item for twice", {
+                    position: "top-center",
+                });
             }
         }
         const timeRequired = totalExerciseTime + parseFloat(book.time_required); 
@@ -41,11 +45,11 @@ const CardAndReadingInfo = () => {
         setNumberOfBooks(dataNumber);
     }
     
-
     return (
         <div className="card-and-reading-info">
             <Cards exerciseTimeHandler = {exerciseTimeHandler} books = {books}></Cards>
             <ReadingInfo numberOfBooks={numberOfBooks} totalExerciseTime={totalExerciseTime}></ReadingInfo>
+            <ToastContainer />
         </div>
     );
 };
