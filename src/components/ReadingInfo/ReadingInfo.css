@@ -73,15 +73,21 @@
 }
 
 
-@media screen and (max-width: 1026px){
+ @media screen and (max-width: 1026px){
+    
     .reading-info-parent{
         width: 100%;
     }
+
 }
 
   
 @media screen and (max-width: 769px){
+
     .reading-info-parent{
         width: 100%;
     }
-}
+  
+} 
+
+

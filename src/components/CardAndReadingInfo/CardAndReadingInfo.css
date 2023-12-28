@@ -3,7 +3,7 @@
     gap: 15px;
     width: 95%;
     margin: auto;
-    padding: 30px 0px 30px 10px;
+    padding: 30px 10px 30px 10px;
     background-color: rgb(249, 248, 248);
 }
 @media screen and (max-width: 1026px){
