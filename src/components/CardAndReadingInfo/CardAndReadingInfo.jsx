@@ -11,8 +11,7 @@ const CardAndReadingInfo = () => {
     const [books, setBooks] = useState([]);
     const [totalExerciseTime, setTotalExerciseTime] = useState(0);
     const [numberOfBooks, setNumberOfBooks] = useState([]);
-    // const [added, setAdded] = useState(false);
-    // console.log(numberOfBooks);
+
 
     useEffect(()=>{
         const loadData = async()=>{
