@@ -32,12 +32,6 @@
     background-color: #ffff;
 }
 
-.active{
-    background-color: purple;
-}
-.active:hover{
-    color: white;
-}
 .activity-completed-button {
   appearance: button;
   backface-visibility: hidden;

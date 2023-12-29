@@ -19,6 +19,8 @@ const ReadingInfo = ({totalExerciseTime, numberOfBooks}) => {
     const breakTimeHandler = (breakTime) =>{
         setBreakTime(breakTime)
         setBreakTimeToLocalStorage(breakTime);
+
+        
     }
     const activityCompleted = ()=>{
         return toast.info("All activities is completed.", {
@@ -33,11 +35,11 @@ const ReadingInfo = ({totalExerciseTime, numberOfBooks}) => {
             <div  className="reading-time-info">
                 <h3 style={{fontSize: "20px", color: "purple", borderBottom:"4px solid white", paddingBottom: "20px",textAlign: "center"}}>Add a Break</h3>
                 <div className="break-time-button-parent">
-                    <button className="break-time-button" onClick={()=>breakTimeHandler(10)}><span style={{fontSize: "22px",fontWeight:"700"}}>10</span>m</button>
-                    <button className="break-time-button button-margin" onClick={()=>breakTimeHandler(20)}><span style={{fontSize: "22px",fontWeight:"700"}}>20</span>m</button>
-                    <button className="break-time-button button-margin" onClick={()=>breakTimeHandler(30)}><span style={{fontSize: "22px",fontWeight:"700"}}>30</span>m</button>
-                    <button className="break-time-button button-margin" onClick={()=>breakTimeHandler(40)}><span style={{fontSize: "22px",fontWeight:"700"}}>40</span>m</button>
-                    <button className="break-time-button button-margin" onClick={()=>breakTimeHandler(50)}><span style={{fontSize: "22px",fontWeight:"700"}}>50</span>m</button>  
+                    <button className='break-time-button'  onClick={()=>breakTimeHandler(10)}><span style={{fontSize: "22px",fontWeight:"700"}}>10</span>m</button>
+                    <button className='break-time-button button-margin' onClick={()=>breakTimeHandler(20)}><span style={{fontSize: "22px",fontWeight:"700"}}>20</span>m</button>
+                    <button className='break-time-button button-margin' onClick={()=>breakTimeHandler(30)}><span style={{fontSize: "22px",fontWeight:"700"}}>30</span>m</button>
+                    <button className='break-time-button button-margin' onClick={()=>breakTimeHandler(40)}><span style={{fontSize: "22px",fontWeight:"700"}}>40</span>m</button>
+                    <button className='break-time-button button-margin' onClick={()=>breakTimeHandler(50)}><span style={{fontSize: "22px",fontWeight:"700"}}>50</span>m</button>  
                 </div>
                 <h3 style={{fontSize: "20px", color: "purple", padding: "20px 0px",textAlign:"center",borderBottom:"4px solid white"}}>Exercise Details</h3>
                 <p style={{textAlign: "center", fontWeight: "700",paddingTop: "20px"}}>Total Number of Selected Books {numberOfBooks.length}</p>

@@ -12,7 +12,7 @@ const getBreakTimeFromLocalStorage = () => {
     localStorage.getItem("breakTime") : "";
 }
 const setBreakTimeToLocalStorage = (breakTime) =>{
-    console.log(breakTime);
+    // console.log(breakTime);
     localStorage.setItem("breakTime",(breakTime));
 }
 
