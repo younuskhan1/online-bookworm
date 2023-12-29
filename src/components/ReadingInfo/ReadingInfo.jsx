@@ -3,7 +3,9 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./ReadingInfo.css"
 import { useEffect, useState } from 'react';
-import { getBreakTimeFromLocalStorage, setBreakTimeToLocalStorage } from '../LocalStorage/LocalStorage';
+import { getBreakTimeFromLocalStorage,
+     setBreakTimeToLocalStorage } 
+     from '../LocalStorage/LocalStorage';
 
 const ReadingInfo = ({totalExerciseTime, numberOfBooks}) => {
     // console.log(totalExerciseTime)
