@@ -33,8 +33,9 @@ const CardAndReadingInfo = () => {
         // console.log(book);
         for(let books of numberOfBooks){
             if( books.title === book.title){
-                return toast.warn("you cannot add the same book for twice times.", {
+                return toast.info("you cannot add the same book for twice times.", {
                     position: "top-center",
+                    theme: "dark",
                 });
             }
         }
