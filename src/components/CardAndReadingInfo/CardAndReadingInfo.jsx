@@ -5,6 +5,9 @@ import Cards from "../Cards/Cards";
 import ReadingInfo from "../ReadingInfo/ReadingInfo";
 import "./CardAndReadingInfo.css";
 import { useEffect } from "react";
+import { getElementsFromLocalStorage, 
+    setElementToLocalStorage } 
+    from "../LocalStorage/LocalStorage";
 
 
 const CardAndReadingInfo = () => {
@@ -28,6 +31,27 @@ const CardAndReadingInfo = () => {
      loadData();
     },[])
 
+    useEffect(()=>{
+        if(books.length > 0){
+            let localStorageBooks =[];
+            const elementsOfLS = getElementsFromLocalStorage();
+            for (let element of elementsOfLS){
+                const LSElements = books.find(book => book.title === element);
+                if(LSElements){
+                    localStorageBooks.push(LSElements);
+                }
+            }
+            setNumberOfBooks(localStorageBooks);
+            let requiredTime = 0;
+            for(let book of localStorageBooks){
+               requiredTime = requiredTime + parseFloat(book.time_required);
+            }
+            setTotalExerciseTime(requiredTime);
+
+        }
+        
+    },[books])
+
 
     const exerciseTimeHandler = (book) =>{
         // console.log(book);
@@ -43,6 +67,7 @@ const CardAndReadingInfo = () => {
         setTotalExerciseTime(timeRequired);
         const dataNumber = [...numberOfBooks, book];
         setNumberOfBooks(dataNumber);
+        setElementToLocalStorage(book);
     }
     
     return (

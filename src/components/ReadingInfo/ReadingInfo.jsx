@@ -2,15 +2,21 @@ import PropTypes from 'prop-types';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import "./ReadingInfo.css"
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { getBreakTimeFromLocalStorage, setBreakTimeToLocalStorage } from '../LocalStorage/LocalStorage';
 
 const ReadingInfo = ({totalExerciseTime, numberOfBooks}) => {
     // console.log(totalExerciseTime)
     const [breakTime, setBreakTime] = useState(0);
-    // const [click, setClick] = useState(false);
+    
+    useEffect(()=>{
+        const getBreakTimeFromLS = getBreakTimeFromLocalStorage();
+        setBreakTime(getBreakTimeFromLS);
+    },[])
 
     const breakTimeHandler = (breakTime) =>{
         setBreakTime(breakTime)
+        setBreakTimeToLocalStorage(breakTime);
     }
     const activityCompleted = ()=>{
         return toast.info("All activities is completed.", {
@@ -18,6 +24,7 @@ const ReadingInfo = ({totalExerciseTime, numberOfBooks}) => {
             theme: "dark",
         });
     }
+
     return (
         <div className="reading-info-parent">
             <p style={{textAlign: "center",padding: "0px 10px 20px", fontSize: "25px",fontWeight: "700"}}>Break & Exercise Time</p>
